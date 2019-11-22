@@ -21,7 +21,7 @@ export default class App extends Component {
         <AboveTheFold
           title="Hello, I'm Andrew."
           description="
-            I'm a Full Stack eveloper, interested in UI/UX design. I do volunteer
+            I'm a Full Stack developer, interested in UI/UX design. I do volunteer
             work with Team Rubicon and help others learn how to design and
             program."
         />
