@@ -10,8 +10,13 @@ export default class Contact extends Component {
           <div className="contactBlock">
             <h3>{this.props.subtitle}</h3>
             <p>{this.props.description}</p>
+            <p>
+              Email me: <span> </span>
+              <a href="mailto:andrew.l.krause@gmail.com">
+                andrew.l.krause@gmail.com
+              </a>
+            </p>
           </div>
-          <ContactForm />
         </div>
       </section>
     );

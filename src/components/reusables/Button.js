@@ -12,6 +12,8 @@ export default class Button extends Component {
     return (
       <a
         href={this.props.url}
+        target={this.props.external ? "_blank" : null}
+        rel="noopener noreferrer"
         className={this.props.btnType === "inline" ? "inline-button" : "button"}
       >
         {this.props.icon ? (

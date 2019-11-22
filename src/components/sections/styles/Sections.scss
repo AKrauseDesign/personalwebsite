@@ -9,6 +9,7 @@ $white: #ffffff;
   height: auto;
   margin: 0 auto;
   position: relative;
+  border-top: 1px solid rgba($black, 0.2);
 }
 
 .solid-btn {
@@ -50,13 +51,18 @@ a {
 
 h2 {
   font-size: 16px;
-  color: $black;
+  color: rgba($black, 0.5);
+  margin-bottom: 10px;
 }
 
 header {
   height: 100px;
   width: 100%;
   position: relative;
+
+  .container {
+    border: none;
+  }
 
   img {
     position: absolute;
@@ -79,6 +85,10 @@ header {
 #atf {
   height: 100%;
   position: relative;
+
+  .container {
+    border: none;
+  }
 
   h1 {
     margin: 100px 0 0 0;
@@ -289,7 +299,7 @@ header {
 
     a {
       display: block;
-      width: 180px;
+      width: 230px;
       margin-top: 20px;
       text-align: center;
       padding: 12px 0;
@@ -314,8 +324,11 @@ header {
   margin: 30px 0 0 0;
 
   .contactBlock {
-    width: 40%;
-    margin-right: 10%;
+    width: 60%;
+
+    @include tablet {
+      width: 100%;
+    }
 
     h3 {
       font-size: 30px;
@@ -329,48 +342,18 @@ header {
         width: 100%;
       }
     }
-  }
-  .contactForm {
-    width: 45%;
-    form {
-      label {
-        font-size: 12px;
-        padding: 0;
-      }
 
-      input,
-      textarea {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        padding: 8px 10px;
-        margin: 0 0 10px 0;
-        font-size: 18px;
-        border: 1px solid $black;
-      }
-
-      textarea {
-        resize: none;
-        height: 200px;
-        font-family: inherit;
-      }
-
-      input[type="submit"] {
-        width: 130px;
-        background: $black;
-        color: $white;
-      }
+    a {
+      color: inherit;
+      font-style: italic;
     }
-  }
-
-  .contactBlock,
-  .contactForm {
-    display: inline-block;
-    vertical-align: top;
   }
 }
 
 footer {
+  .container {
+    border: none !important;
+  }
   .footer-container {
     margin: 30px auto 0 auto;
     border-top: 1px solid rgba($black, 0.2);

@@ -9,8 +9,13 @@ export default class AboveTheFold extends Component {
           <h1>{this.props.title}</h1>
           <p>{this.props.description}</p>
           <div className="button-container">
-            <Button icon="newspaper" text="Resume" />
-            <Button icon="brain" text="Projects" />
+            <Button
+              url={process.env.PUBLIC_URL + "files/AndrewKrauseResume2019.pdf"}
+              icon="newspaper"
+              text="Resume"
+              external={true}
+            />
+            <Button url="#contact" icon="brain" text="Projects" />
           </div>
         </div>
       </section>
