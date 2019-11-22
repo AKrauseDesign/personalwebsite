@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class IconBox extends Component {
   render() {
     return (
-      <div className="IconBox_container">
+      <div>
         {this.props.icon ? (
           <i
             className={

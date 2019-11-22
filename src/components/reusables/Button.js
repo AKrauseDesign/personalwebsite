@@ -1,10 +1,18 @@
 import React, { Component } from "react";
+import { exportDefaultDeclaration } from "@babel/types";
 
 export default class Button extends Component {
+  buttonClasses = (type, iconType) => {
+    // type ? "solid-btn" : null;
+    // iconType ? "fab fa-" : null;
+  };
+
+  //TODO: convert the buttons to the above function
+
   render() {
     return (
       <a
-        href=""
+        href={this.props.url}
         className={this.props.btnType === "inline" ? "inline-button" : "button"}
       >
         {this.props.icon ? (
