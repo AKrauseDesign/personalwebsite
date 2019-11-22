@@ -43,7 +43,7 @@ export default class Footer extends Component {
         <div className="container">
           <div class="footer-container">
             {this.props.footerPic ? (
-              <img src={this.props.footerPic} alt={this.props.name} />
+              <img src={this.props.footerPic} alt={this.props.picAlt} />
             ) : null}
             <div class="icons-container">
               {this.connections.social.map(connect => (

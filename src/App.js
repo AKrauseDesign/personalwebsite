@@ -37,7 +37,7 @@ export default class App extends Component {
           subtitle="What do you need?"
           description="I’d love to meet with you and discuss your project. I’m comfortable working with innovative design, corporate branding structures, and a wide range of software engineering needs."
         />
-        <Footer footerPic={smallLogo} />
+        <Footer footerPic={smallLogo} picAlt="Andrew Krause Logo small" />
       </div>
     );
   }
