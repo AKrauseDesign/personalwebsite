@@ -12,7 +12,7 @@ export default class AboutMe extends Component {
           ) : null}
           <h1>{this.props.name}</h1>
           <p>{this.props.description}</p>
-          <Button text="Contact Me" />
+          <Button text="Contact Me" url="#contact" />
         </div>
       </section>
     );
