@@ -11,7 +11,7 @@ export default class IconBox extends Component {
             icon={this.props.icon}
             brandColor={this.props.brandColor}
           />
-          <h4>{this.props.text}</h4>
+          <h3>{this.props.text}</h3>
         </div>
       </div>
     );
