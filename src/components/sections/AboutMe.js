@@ -4,7 +4,7 @@ import Button from "../reusables/Button";
 export default class AboutMe extends Component {
   render() {
     return (
-      <section id="aboutme">
+      <section id="about">
         <div className="container">
           <h2>About Me</h2>
           {this.props.profilePic ? (

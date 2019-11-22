@@ -31,7 +31,7 @@ export default class Projects extends Component {
         <div className="container">
           <h2>Projects</h2>
           {this.projects.data.map(project => (
-            <div key={project.id}>
+            <div className="project-container" key={project.id}>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <Button url={project.url} text={project.name} />

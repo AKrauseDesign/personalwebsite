@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { exportDefaultDeclaration } from "@babel/types";
 
 export default class Button extends Component {
   buttonClasses = (type, iconType) => {

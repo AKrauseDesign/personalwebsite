@@ -7,32 +7,38 @@ export default class Expertise extends Component {
       {
         text: "Wordpress",
         icon: "wordpress",
-        brand: true
+        brand: true,
+        brandColor: "#21759B"
       },
       {
         text: "Python",
         icon: "python",
-        brand: true
+        brand: true,
+        brandColor: "#4B8BBE"
       },
       {
         text: "Javascript",
         icon: "js",
-        brand: true
+        brand: true,
+        brandColor: "#F7DF1E"
       },
       {
         text: "HTML",
         icon: "html5",
-        brand: true
+        brand: true,
+        brandColor: "#E34F26"
       },
       {
         text: "SASS",
         icon: "sass",
-        brand: true
+        brand: true,
+        brandColor: "#CC6699"
       },
       {
         text: "SQL",
         icon: "database",
-        brand: false
+        brand: false,
+        brandColor: "#00758F"
       }
     ]
   };
@@ -46,6 +52,7 @@ export default class Expertise extends Component {
               text={expert.text}
               icon={expert.icon}
               iconType={expert.brand ? "brand" : null}
+              brandColor={expert.brandColor}
             />
           ))}
         </div>

@@ -18,21 +18,21 @@ export default class ConnectWithMe extends Component {
         text: "Dribbble",
         icon: "dribbble",
         iconType: "brand",
-        url: "https://www.dribbble.com",
+        url: "https://www.dribbble.com/",
         altname: false
       },
       {
         text: "Twitter",
         icon: "twitter",
         iconType: "brand",
-        url: "https://www.twitter.com",
+        url: "https://www.twitter.com/",
         altname: false
       },
       {
         text: "Github",
         icon: "github",
         iconType: "brand",
-        url: "https://www.github.com",
+        url: "https://www.github.com/",
         altname: false
       }
     ]
@@ -40,7 +40,7 @@ export default class ConnectWithMe extends Component {
 
   render() {
     return (
-      <section id="connects">
+      <section id="connect">
         <div className="container">
           <h2>Connect With Me</h2>
           <div class="connection-links">

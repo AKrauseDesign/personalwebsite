@@ -7,7 +7,9 @@ export default class Navigation extends Component {
         <div>
           <img src={this.props.logo} alt="Andrew Krause Logo" />
           <nav>
-            <a className="solid-btn">Contact</a>
+            <a href="#contact" className="inverse-btn">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
