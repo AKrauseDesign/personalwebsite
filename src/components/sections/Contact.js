@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ContactForm from "../reusables/ContactForm";
 
 export default class Contact extends Component {
   render() {
