@@ -1,0 +1,66 @@
+$black: #232c46;
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  border-top: 1px solid rgba($black, 0.2);
+}
+
+.alt-container {
+  max-width: 1200px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.solid-btn {
+  display: block;
+  width: 130px;
+  padding: 10px 0;
+  text-align: center;
+  background: $black;
+  color: $white;
+
+  @include mobile {
+    width: 120px;
+  }
+}
+
+.inverse-btn {
+  box-sizing: border-box;
+  display: block;
+  width: 130px;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid $black;
+  background: $white;
+  color: $black;
+
+  @include mobile {
+    width: 120px;
+  }
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 16px;
+  color: rgba($black, 0.8);
+  margin-bottom: 10px;
+}
