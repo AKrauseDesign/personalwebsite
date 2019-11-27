@@ -1,13 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Copyright extends Component {
-  currentYear = new Date();
-
-  render() {
-    return (
-      <p className="copyright">
-        {"Copyright 2016 - " + this.currentYear.getFullYear()}
-      </p>
-    );
-  }
+export default function Copyright() {
+  let currentYear = new Date();
+  return (
+    <p className="copyright">
+      {"Copyright 2016 - " + currentYear.getFullYear()}
+    </p>
+  );
 }
