@@ -19,11 +19,6 @@ export default class App extends Component {
           <Navigation logo={logo} />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route
-              path={"/study/RewardsExtraTheMovie"}
-              exact
-              component={RewardsExtraTheMovie}
-            />
             <Route component={Error} />
           </Switch>
           <Contact
