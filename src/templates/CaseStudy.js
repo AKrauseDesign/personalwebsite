@@ -7,6 +7,7 @@ import Button2 from "../components/reusables/Button2";
 import Card from "../components/reusables/Card";
 import DetailCard from "../components/reusables/DetailCard";
 import ProjectCard from "../components/reusables/Project";
+import Contact from "../components/sections/ContactTwo";
 
 export default class CaseStudy extends Component {
   render() {
@@ -118,6 +119,11 @@ export default class CaseStudy extends Component {
               />
             </div>
           </section>
+          <Contact
+            subtitle="What do you need?"
+            description="I’d love to meet with you and discuss your project. I’m comfortable working with innovative design, corporate branding structures, and a wide range of software engineering needs."
+            topBorder={false}
+          />
         </div>
       </div>
     );

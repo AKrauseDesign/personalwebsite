@@ -4,7 +4,7 @@ export default class Contact extends Component {
   render() {
     return (
       <section id="contact">
-        <div className="container">
+        <div className={this.props.topBorder ? "container" : "alt-container"}>
           <h2>Contact Me</h2>
           <div className="contactBlock">
             <h3>{this.props.subtitle}</h3>
