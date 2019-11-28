@@ -1,19 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Icon extends Component {
-  render() {
-    return (
-      <div>
-        {this.props.icon ? (
-          <i
-            style={{ color: `${this.props.brandColor}` }}
-            className={
-              (this.props.iconType === "brand" ? "fab fa-" : "fal fa-") +
-              `${this.props.icon}`
-            }
-          ></i>
-        ) : null}
-      </div>
-    );
-  }
+export default function Icon(props) {
+  return (
+    <div>
+      {props.icon ? (
+        <i
+          style={{ color: `${props.brandColor}` }}
+          className={
+            (props.iconType === "brand" ? "fab fa-" : "fal fa-") +
+            `${props.icon}`
+          }
+        ></i>
+      ) : null}
+    </div>
+  );
 }

@@ -1,22 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class IconLink extends Component {
-  render() {
-    return (
-      <a key={this.props.key} href={this.props.url} className="iconlink">
-        {this.props.icon ? (
-          <div>
-            <i
-              style={{ color: `${this.props.brandColor}` }}
-              className={
-                (this.props.iconType === "brand" ? "fab fa-" : "fal fa-") +
-                `${this.props.icon}`
-              }
-            ></i>
-            <span style={{ display: "none" }}>{this.props.icon}</span>
-          </div>
-        ) : null}
-      </a>
-    );
-  }
+export default function IconLink(props) {
+  return (
+    <a key={props.key} href={props.url} className="iconlink">
+      {props.icon ? (
+        <div>
+          <i
+            style={{ color: `${props.brandColor}` }}
+            className={
+              (props.iconType === "brand" ? "fab fa-" : "fal fa-") +
+              `${props.icon}`
+            }
+          ></i>
+          <span style={{ display: "none" }}>{props.icon}</span>
+        </div>
+      ) : null}
+    </a>
+  );
 }

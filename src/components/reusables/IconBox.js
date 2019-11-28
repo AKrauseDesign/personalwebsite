@@ -1,19 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import Icon from "./Icon";
 
-export default class IconBox extends Component {
-  render() {
-    return (
-      <div className="iconbox">
-        <div class="iconbox-container">
-          <Icon
-            iconType={this.props.iconType}
-            icon={this.props.icon}
-            brandColor={this.props.brandColor}
-          />
-          <h3>{this.props.text}</h3>
-        </div>
+export default function IconBox(props) {
+  return (
+    <div className="iconbox">
+      <div class="iconbox-container">
+        <Icon
+          iconType={props.iconType}
+          icon={props.icon}
+          brandColor={props.brandColor}
+        />
+        <h3>{props.text}</h3>
       </div>
-    );
-  }
+    </div>
+  );
 }

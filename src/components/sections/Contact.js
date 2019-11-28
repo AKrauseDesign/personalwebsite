@@ -1,23 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import EmailContact from "../reusables/EmailContact";
 
-export default class Contact extends Component {
-  render() {
-    return (
-      <section id="contact">
-        <div className="container">
-          <h2>Contact Me</h2>
-          <div className="contactBlock">
-            <h3>{this.props.subtitle}</h3>
-            <p>{this.props.description}</p>
-            <p>
-              Email me: <span> </span>
-              <a href="mailto:andrew.l.krause@gmail.com">
-                andrew.l.krause@gmail.com
-              </a>
-            </p>
-          </div>
+export default function Contact(props) {
+  return (
+    <section id="contact">
+      <div className={props.topBorder ? "container" : "alt-container"}>
+        <h2>Contact Me</h2>
+        <div className="contactBlock">
+          <h3>{props.subtitle}</h3>
+          <p>{props.description}</p>
+          <EmailContact email="andrew.l.krause@gmail.com" />
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
 }
