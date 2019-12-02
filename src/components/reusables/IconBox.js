@@ -1,17 +1,15 @@
 import React from "react";
 import Icon from "./Icon";
 
-export default function IconBox(props) {
+const IconBox = ({ iconType, icon, brandColor, text }) => {
   return (
     <div className="iconbox">
       <div class="iconbox-container">
-        <Icon
-          iconType={props.iconType}
-          icon={props.icon}
-          brandColor={props.brandColor}
-        />
-        <h3>{props.text}</h3>
+        <Icon iconType={iconType} icon={icon} brandColor={brandColor} />
+        <h3>{text}</h3>
       </div>
     </div>
   );
-}
+};
+
+export default IconBox;

@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../reusables/Button";
 
-export default function AboveTheFold(props) {
+const AboveTheFold = ({ title, description }) => {
   return (
     <section id="atf">
       <div className="container">
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
         <div className="button-container">
           <Button
             url={process.env.PUBLIC_URL + "files/AndrewKrauseResume2019.pdf"}
@@ -19,4 +19,5 @@ export default function AboveTheFold(props) {
       </div>
     </section>
   );
-}
+};
+export default AboveTheFold;

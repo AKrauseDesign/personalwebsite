@@ -1,17 +1,16 @@
 import React from "react";
 
-export default function Icon(props) {
+const Icon = ({ icon, iconType, brandColor }) => {
   return (
     <div>
-      {props.icon ? (
+      {icon ? (
         <i
-          style={{ color: `${props.brandColor}` }}
-          className={
-            (props.iconType === "brand" ? "fab fa-" : "fal fa-") +
-            `${props.icon}`
-          }
+          style={{ color: `${brandColor}` }}
+          className={(iconType === "brand" ? "fab fa-" : "fal fa-") + `${icon}`}
         ></i>
       ) : null}
     </div>
   );
-}
+};
+
+export default Icon;

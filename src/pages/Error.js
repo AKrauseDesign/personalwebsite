@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "../components/sections/styles/Sections.scss";
 import Button from "../components/reusables/Button";
 import Contact from "../components/sections/Contact";
 
-export default class Error extends Component {
+export default class Error extends PureComponent {
   render() {
     return (
       <div>
