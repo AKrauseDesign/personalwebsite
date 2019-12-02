@@ -1,5 +1,4 @@
 import React from "react";
-import EmailContact from "../reusables/EmailContact";
 
 export default function AltContact(props) {
   return (
@@ -9,7 +8,6 @@ export default function AltContact(props) {
         <div className="contactBlock">
           <h3>{props.subtitle}</h3>
           <p>{props.description}</p>
-          <EmailContact />
         </div>
       </div>
     </section>
