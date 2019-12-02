@@ -26,12 +26,12 @@ export default class Home extends Component {
           name="Andrew Krause"
           description="Originally from Kansas City, I originally learned at the Metropolitan Community College, and obtained an associates in Computer Science. Over the years I’ve learned many languages, frameworks, ideas, and have had the opportunity to work with startups, IOT firms, banks, and marketing agencies."
         />
+        <Project />
         <Contact
           subtitle="What do you need?"
           description="I’d love to meet with you and discuss your project. I’m comfortable working with innovative design, corporate branding structures, and a wide range of software engineering needs."
           topBorder={true}
         />
-        <Project />
       </div>
     );
   }
