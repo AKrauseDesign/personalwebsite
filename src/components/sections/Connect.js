@@ -3,7 +3,6 @@ import Button from "../reusables/Button";
 
 export default class ConnectWithMe extends Component {
   username = "akrausedesign";
-  altUsername = "andrew-krause-54092292/";
 
   connections = {
     social: [
@@ -11,29 +10,25 @@ export default class ConnectWithMe extends Component {
         text: "Linkedin",
         icon: "linkedin-in",
         iconType: "brand",
-        url: "https://www.linkedin.com/in/",
-        altname: true
+        url: "https://www.linkedin.com/in/"
       },
       {
         text: "Dribbble",
         icon: "dribbble",
         iconType: "brand",
-        url: "https://www.dribbble.com/",
-        altname: false
+        url: "https://www.dribbble.com/"
       },
       {
         text: "Twitter",
         icon: "twitter",
         iconType: "brand",
-        url: "https://www.twitter.com/",
-        altname: false
+        url: "https://www.twitter.com/"
       },
       {
         text: "Github",
         icon: "github",
         iconType: "brand",
-        url: "https://www.github.com/",
-        altname: false
+        url: "https://www.github.com/"
       }
     ]
   };
@@ -50,10 +45,7 @@ export default class ConnectWithMe extends Component {
                 text={connect.text}
                 icon={connect.icon}
                 iconType={connect.iconType}
-                url={
-                  connect.url +
-                  (connect.altname ? this.altUsername : this.username)
-                }
+                url={connect.url + this.username}
               />
             ))}
           </div>
