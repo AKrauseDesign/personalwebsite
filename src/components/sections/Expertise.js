@@ -5,16 +5,22 @@ export default class Expertise extends Component {
   expertise = {
     data: [
       {
-        text: "Wordpress",
-        icon: "wordpress",
+        text: "PHP",
+        icon: "php",
         brand: true,
-        brandColor: "#21759B"
+        brandColor: "#898DC5"
       },
       {
         text: "Python",
         icon: "python",
         brand: true,
         brandColor: "#4B8BBE"
+      },
+      {
+        text: "Ruby",
+        icon: "gem",
+        brand: false,
+        brandColor: "#CC0000"
       },
       {
         text: "Javascript",

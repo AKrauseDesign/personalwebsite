@@ -7,16 +7,20 @@ import Button2 from "../components/reusables/Button2";
 import Card from "../components/reusables/Card";
 import DetailCard from "../components/reusables/DetailCard";
 import ProjectCard from "../components/reusables/Project";
+import CaseNav from "../components/navigation/CaseNav";
 import Contact from "../components/sections/ContactTwo";
 
 export default class CaseStudy extends Component {
   render() {
+    const { title, description } = this.props;
+    const mySteps = [{ step: "item 1" }, { step: "item2" }];
+
     return (
       <div>
         <section id="casestudy_head">
           <div className="alt-container">
-            <h1>{this.props.title}</h1>
-            <p>{this.props.description}</p>
+            <h1>{title}</h1>
+            <p>{description}</p>
             <div className="button-container">
               <Button2
                 url="/"
@@ -124,6 +128,7 @@ export default class CaseStudy extends Component {
             description="I’d love to meet with you and discuss your project. I’m comfortable working with innovative design, corporate branding structures, and a wide range of software engineering needs."
             topBorder={false}
           />
+          <CaseNav title="Rewards Extra the Movie" />
         </div>
       </div>
     );
