@@ -8,6 +8,7 @@ import smallLogo from "./images/small-logo.svg";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Footer from "./components/sections/Footer";
+import CaseStudy from "./pages/CaseStudies";
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
           <Navigation logo={logo} />
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/cases" exact component={CaseStudy} />
             <Route component={Error} />
           </Switch>
           <Footer footerPic={smallLogo} picAlt="Andrew Krause Logo small" />
