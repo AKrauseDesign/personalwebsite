@@ -1,5 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React, { PureComponent } from "react";
+import moment from "moment";
 import "../components/sections/styles/Sections.scss";
 import Button from "../components/reusables/Button";
 import Contact from "../components/sections/Contact";
@@ -9,7 +10,6 @@ export default class CaseStudy extends PureComponent {
     super(props);
     this.state = {
       error: null,
-      isLoaded: false,
       items: []
     };
   }
@@ -19,13 +19,11 @@ export default class CaseStudy extends PureComponent {
       .then(
         result => {
           this.setState({
-            isLoaded: true,
             items: result
           });
         },
         error => {
           this.setState({
-            isLoaded: true,
             error
           });
         }
@@ -45,6 +43,7 @@ export default class CaseStudy extends PureComponent {
                 <li key={item._id}>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
+                  <p>{moment(item.date).format("MMMM Do, YYYY")}</p>
                 </li>
               ))}
             </ul>
