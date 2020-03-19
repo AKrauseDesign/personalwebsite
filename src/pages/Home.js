@@ -15,7 +15,7 @@ export default class Home extends Component {
         <AboveTheFold
           title="Hello, I'm Andrew."
           description="
-            I'm a Full Stack developer, interested in UI/UX design. I do volunteer
+            I'm a Full Stack developer and interested in UI/UX design. I do volunteer
             work with Team Rubicon and help others learn how to design and
             program."
         />
@@ -24,7 +24,7 @@ export default class Home extends Component {
         <AboutMe
           profilePic={face}
           name="Andrew Krause"
-          description="Originally from Kansas City, I originally learned at the Metropolitan Community College, and obtained an associates in Computer Science. Over the years I’ve learned many languages, frameworks, ideas, and have had the opportunity to work with startups, IOT firms, banks, and marketing agencies."
+          description="Originally from Kansas City, I studied at the Metropolitan Community College, and obtained an associates in Computer Science. Over the years I’ve learned many languages, frameworks, ideas, and have had the opportunity to work with startups, IOT firms, banks, and marketing agencies."
         />
         <Project />
         <Contact

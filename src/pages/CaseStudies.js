@@ -13,8 +13,17 @@ export default class CaseStudy extends PureComponent {
       items: []
     };
   }
+
+  modeCheck() {
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+      return process.env.REACT_APP_LOCAL_API_BUILD;
+    } else {
+      return process.env.REACT_APP_AKRAUSEDESIGNAPI;
+    }
+  }
+
   componentDidMount() {
-    fetch(process.env.REACT_APP_AKRAUSEDESIGNAPI)
+    fetch(this.modeCheck())
       .then(res => res.json())
       .then(
         result => {
