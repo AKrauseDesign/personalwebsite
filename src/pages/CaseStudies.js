@@ -1,54 +1,53 @@
 /* eslint-disable no-useless-constructor */
-import React, { PureComponent } from "react";
-import moment from "moment";
-import "../components/sections/styles/Sections.scss";
-import Button from "../components/reusables/Button";
-import Contact from "../components/sections/Contact";
+import React, { PureComponent } from "react"
+import moment from "moment"
+import "../components/sections/styles/Sections.scss"
+import Contact from "../components/sections/Contact"
 
 export default class CaseStudy extends PureComponent {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       error: null,
-      items: []
-    };
+      items: [],
+    }
   }
 
   modeCheck() {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
-      return process.env.REACT_APP_LOCAL_API_BUILD;
+      return process.env.REACT_APP_LOCAL_API_BUILD
     } else {
-      return process.env.REACT_APP_AKRAUSEDESIGNAPI;
+      return process.env.REACT_APP_AKRAUSEDESIGNAPI
     }
   }
 
   componentDidMount() {
     fetch(this.modeCheck())
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(
-        result => {
+        (result) => {
           this.setState({
-            items: result
-          });
+            items: result,
+          })
         },
-        error => {
+        (error) => {
           this.setState({
-            error
-          });
+            error,
+          })
         }
-      );
+      )
   }
 
   render() {
-    const { error, items } = this.state;
+    const { error, items } = this.state
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <div>Error: {error.message}</div>
     } else {
       return (
         <div>
           <div className="container" style={{ borderTop: "none" }}>
             <ul>
-              {items.map(item => (
+              {items.map((item) => (
                 <li key={item._id}>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
@@ -63,7 +62,7 @@ export default class CaseStudy extends PureComponent {
             topBorder={true}
           />
         </div>
-      );
+      )
     }
   }
 }
