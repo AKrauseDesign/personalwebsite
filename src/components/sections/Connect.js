@@ -6,12 +6,12 @@ export default class ConnectWithMe extends Component {
 
   connections = {
     social: [
-      {
-        text: "Linkedin",
-        icon: "linkedin-in",
-        iconType: "brand",
-        url: "https://www.linkedin.com/in/"
-      },
+      // {
+      //   text: "Linkedin",
+      //   icon: "linkedin-in",
+      //   iconType: "brand",
+      //   url: "https://www.linkedin.com/in/"
+      // },
       {
         text: "Dribbble",
         icon: "dribbble",

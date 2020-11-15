@@ -5,12 +5,12 @@ import Copyright from "../reusables/Copyright";
 export default class Footer extends Component {
   connections = {
     social: [
-      {
-        text: "Linkedin",
-        icon: "linkedin-in",
-        iconType: "brand",
-        url: "https://www.linkedin.com/in/andrew-krause-54092292/"
-      },
+      // {
+      //   text: "Linkedin",
+      //   icon: "linkedin-in",
+      //   iconType: "brand",
+      //   url: "https://www.linkedin.com/in/andrew-krause-54092292/"
+      // },
       {
         text: "Dribbble",
         icon: "dribbble",
