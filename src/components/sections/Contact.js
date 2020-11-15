@@ -9,7 +9,7 @@ export default function Contact(props) {
         <div className="contactBlock">
           <h3>{props.subtitle}</h3>
           <p>{props.description}</p>
-          <EmailContact email="andrew.l.krause@gmail.com" />
+          <EmailContact email="letstalktoandrew@gmail.com" />
         </div>
       </div>
     </section>
